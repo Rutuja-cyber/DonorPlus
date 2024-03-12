@@ -1,0 +1,197 @@
+* /* applicable to all the html tags */
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Heebo', sans-serif;
+}
+
+
+.header
+{
+
+	min-height: 100vh;
+	min-width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.65), rgba(4,9,30,0.65)), url(banner.jpg); /* A-alpha - defines transperancy or opaqueness value between 0-1*/
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+nav
+{
+	display: flex; 
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+ 
+nav img
+{
+	width: 300px;
+}
+
+.main-menu
+{
+	flex: 1; /*The flex CSS shorthand property sets how a flex item will grow or shrink to fit the space available in its flex container. */
+	text-align: right;
+}
+
+.main-menu ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.main-menu ul li a
+{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.main-menu ul li::after
+{
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+}
+
+.main-menu ul li:hover::after
+{
+	width: 100%;
+}
+
+.home-center-textbox
+{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-40%,-50%); 
+	text-align: center;
+
+}
+
+.home-center-textbox
+{
+	font-size: 35px;
+}
+
+.donor-button-home
+{
+	display: inline;
+	text-decoration: none;
+	color: #ef7c48;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 17px;
+	background-color: #fff;
+	position: relative;
+	cursor: pointer;
+}
+
+.donor-button-home:hover
+{
+	background-color: #ef7c48;
+	color: #fff;
+	transition: 1s;
+}
+
+.patient-button-home
+{
+	display: inline;
+	text-decoration: none;
+	color: #ef7c48;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 17px;
+	background-color: #fff;
+	position: relative;
+	cursor: pointer;
+}
+
+.patient-button-home:hover
+{
+	background-color: #ef7c48;
+	color: #fff;
+	transition: ls;
+}
+
+.how-it-works
+{
+	color: #ef7c48;
+	text-align: center;
+}
+
+/*
+.how-it-works-banner
+{
+	background-image: url(howitworksbanner.png);
+	width: 100%;
+	height: 100%;
+}*/
+
+.how-it-works-steps
+{
+	margin-top: 5%;
+	display: inline-flex;
+	justify-content: space-between;
+	
+}
+
+.how-it-works-subtext
+{
+	padding-top: 5px;
+	font-size: 12px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.back-to-top
+{
+	background-color: #1c1c1c;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.back-to-top-text
+{
+	color: white;
+	text-decoration: none;	
+}
+
+.main-footer
+{
+	background-color: #333333;
+	height: 150px;
+	display: flex;
+
+}
+
+.footer-logo
+{
+	width: 250px;
+	padding-top: 50px;
+	padding-left: 100px;
+}
+
+#h2
+{
+	margin-left: 18%;
+	padding-top: 20px;
+	color: white;
+}
+
+#h3
+{
+	margin-left: 50px;
+	padding-top: 20px;
+	color: white;
+}
